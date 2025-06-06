@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phantom Wallet</title>
+    <title>Chronos Wallet</title>
     <style>
         * {
             margin: 0;
@@ -46,7 +46,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px;
-            background: rgba(0,0,0,0.3);
+            background: #000000;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255,255,255,0.08);
         }
@@ -920,12 +920,12 @@
     <div class="app-container">
         <div class="header">
             <div class="logo">
-                <div class="phantom-icon">👻</div>
-                Phantom
+                <div class="phantom-icon">&#128123;</div>
+                Chronos
             </div>
             <div class="header-actions">
-                <div class="header-btn" onclick="openNotifications()">🔔</div>
-                <div class="header-btn" onclick="openMenu()">⋯</div>
+                <div class="header-btn" onclick="openNotifications()">&#128276;</div>
+                <div class="header-btn" onclick="openMenu()">&#8942;</div>
             </div>
         </div>
 
@@ -944,17 +944,17 @@
                         <div class="balance-label">Total Portfolio Value</div>
                         <div class="balance-main">
                             <div class="balance-amount" id="totalUSD">$175.00</div>
-                            <button class="add-funds-btn" onclick="addFunds()">↗</button>
+                            <button class="add-funds-btn" onclick="addFunds()">&uarr;</button>
                         </div>
                         <div class="balance-usd">
-                            <span id="solBalance">1.25</span> SOL • $140.00/SOL
+                            <span id="solBalance">1.25</span> SOL â¢ $140.00/SOL
                         </div>
                     </div>
                 </div>
 
                 <div class="coins-section">
                     <div class="section-title">
-                        💰 Your Tokens
+                        &#128176; Your Tokens
                     </div>
                     <div class="coin-item">
                         <div class="coin-icon sol">SOL</div>
@@ -982,10 +982,10 @@
 
                 <div class="action-buttons">
                     <button class="action-btn send-btn" onclick="openSendModal()">
-                        ↗ Send
+                        &uarr; Send
                     </button>
                     <button class="action-btn receive-btn" onclick="openReceiveModal()">
-                        ↙ Receive
+                        &darr; Receive
                     </button>
                 </div>
             </div>
@@ -993,11 +993,11 @@
             <!-- Transactions Tab -->
             <div id="transactions-content" class="transactions-content">
                 <div class="section-title">
-                    📊 Transaction History
+                    &#128202; Transaction History
                 </div>
                 <div id="transactionsList">
                     <div class="transaction-item">
-                        <div class="transaction-icon received">↙</div>
+                        <div class="transaction-icon received">&darr;</div>
                         <div class="transaction-details">
                             <div class="transaction-type">Received SOL</div>
                             <div class="transaction-time">2 hours ago</div>
@@ -1005,7 +1005,7 @@
                         <div class="transaction-amount received">+0.5 SOL</div>
                     </div>
                     <div class="transaction-item">
-                        <div class="transaction-icon sent">↗</div>
+                        <div class="transaction-icon sent">&uarr;</div>
                         <div class="transaction-details">
                             <div class="transaction-type">Sent SOL</div>
                             <div class="transaction-time">1 day ago</div>
@@ -1013,7 +1013,7 @@
                         <div class="transaction-amount sent">-0.25 SOL</div>
                     </div>
                     <div class="transaction-item">
-                        <div class="transaction-icon received">↙</div>
+                        <div class="transaction-icon received">&darr;</div>
                         <div class="transaction-details">
                             <div class="transaction-type">Received SOL</div>
                             <div class="transaction-time">3 days ago</div>
@@ -1052,7 +1052,7 @@
 
                 <div class="coins-section">
                     <div class="section-title">
-                        💼 Portfolio Breakdown
+                        &#128188; Portfolio Breakdown
                     </div>
                     <div class="coin-item">
                         <div class="coin-icon sol">SOL</div>
@@ -1071,12 +1071,12 @@
             <!-- Settings Tab -->
             <div id="settings-content" class="settings-content">
                 <div class="section-title">
-                    ⚙️ Wallet Settings
+                    &#9881; Wallet Settings
                 </div>
                 
                 <div class="settings-item" onclick="toggleWalletLock()">
                     <div class="settings-info">
-                        <div class="settings-icon">🔐</div>
+                        <div class="settings-icon">&#128274;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px;">Wallet Lock</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Lock your wallet for security</div>
@@ -1089,7 +1089,7 @@
 
                 <div class="settings-item">
                     <div class="settings-info">
-                        <div class="settings-icon">🌙</div>
+                        <div class="settings-icon">&#127769;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px;">Dark Mode</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Always enabled</div>
@@ -1102,7 +1102,7 @@
 
                 <div class="settings-item">
                     <div class="settings-info">
-                        <div class="settings-icon">🔔</div>
+                        <div class="settings-icon">&#128276;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px;">Notifications</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Transaction alerts</div>
@@ -1115,7 +1115,7 @@
 
                 <div class="settings-item">
                     <div class="settings-info">
-                        <div class="settings-icon">🛡️</div>
+                        <div class="settings-icon">&#128737;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px;">Auto-Lock</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Lock after 5 minutes</div>
@@ -1128,24 +1128,24 @@
 
                 <div class="settings-item" onclick="exportWallet()">
                     <div class="settings-info">
-                        <div class="settings-icon">📄</div>
+                        <div class="settings-icon">&#128196;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px;">Export Wallet</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Download recovery phrase</div>
                         </div>
                     </div>
-                    <div style="color: #9945ff; font-size: 18px;">→</div>
+                    <div style="color: #9945ff; font-size: 18px;">â</div>
                 </div>
 
                 <div class="settings-item" onclick="resetWallet()">
                     <div class="settings-info">
-                        <div class="settings-icon" style="background: linear-gradient(135deg, rgba(255,71,87,0.2), rgba(255,255,255,0.1));">🗑️</div>
+                        <div class="settings-icon" style="background: linear-gradient(135deg, rgba(255,71,87,0.2), rgba(255,255,255,0.1));">&#128465;</div>
                         <div>
                             <div style="font-weight: 700; margin-bottom: 5px; color: #ff4757;">Reset Wallet</div>
                             <div style="color: rgba(255,255,255,0.6); font-size: 13px;">Clear all data</div>
                         </div>
                     </div>
-                    <div style="color: #ff4757; font-size: 18px;">⚠</div>
+                    <div style="color: #ff4757; font-size: 18px;">&#9888;</div>
                 </div>
             </div>
         </div>
@@ -1185,13 +1185,13 @@
             </div>
             <div style="text-align: center;">
                 <div style="width: 200px; height: 200px; background: linear-gradient(145deg, #fff, #f0f0f0); margin: 20px auto; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold; font-size: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-                    QR CODE<br>📱
+                    QR CODE<br>&#128241;
                 </div>
                 <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
                     <div style="color: rgba(255,255,255,0.6); font-size: 12px; margin-bottom: 10px;">Your Wallet Address</div>
                     <div style="font-family: monospace; font-size: 14px; word-break: break-all; display: flex; justify-content: space-between; align-items: center;">
                         <span>7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TjveVQDSbo</span>
-                        <button style="background: none; border: none; color: #9945ff; cursor: pointer; padding: 5px; border-radius: 5px; margin-left: 10px;" onclick="copyAddress()">📋</button>
+                        <button style="background: none; border: none; color: #9945ff; cursor: pointer; padding: 5px; border-radius: 5px; margin-left: 10px;" onclick="copyAddress()">&#128203;</button>
                     </div>
                 </div>
                 <p style="color: rgba(255,255,255,0.6); font-size: 14px;">
@@ -1203,7 +1203,7 @@
 
     <!-- Wallet Lock Screen -->
     <div id="walletLocked" class="wallet-locked">
-        <div class="lock-icon">🔐</div>
+        <div class="lock-icon">&#128274;</div>
         <div class="lock-title">Wallet Locked</div>
         <div class="lock-subtitle">Your wallet is secured. Click below to unlock and access your funds.</div>
         <button class="unlock-btn" onclick="unlockWallet()">Unlock Wallet</button>
@@ -1348,7 +1348,7 @@
             transactionItem.className = 'transaction-item';
             
             const sign = type === 'sent' ? '-' : '+';
-            const icon = type === 'sent' ? '↗' : '↙';
+            const icon = type === 'sent' ? '&uarr;' : '&darr;';
             
             transactionItem.innerHTML = `
                 <div class="transaction-icon ${type}">${icon}</div>
